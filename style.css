@@ -1,0 +1,46 @@
+/* Genel Sayfa Stilleri */
+html, body {
+    height: 100%; /* Sayfanın tüm yüksekliği kaplaması için */
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif; /* Google Font veya varsayılan sans-serif */
+    background-color: #f8f9fa; /* Açık gri arka plan - temiz görünüm */
+    color: #333; /* Ana metin rengi */
+    display: flex; /* İçeriği ortalamak için Flexbox */
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+    text-align: center; /* Metinleri ortala */
+}
+
+/* İçerik Konteyneri */
+.container {
+    max-width: 600px; /* Maksimum genişlik */
+    padding: 20px;
+}
+
+/* Marka Logosu (ATOB) */
+.brand-logo {
+    font-size: 5em; /* Büyük font boyutu */
+    font-weight: 700; /* Kalın font */
+    color: #0056b3; /* Profesyonel mavi tonu - Tıbbi temaya uygun */
+    margin-bottom: 15px; /* Alt boşluk */
+    letter-spacing: 2px; /* Harf arası boşluk */
+}
+
+/* Çok Yakında Yazısı */
+.coming-soon {
+    font-size: 1.8em; /* Daha küçük font boyutu */
+    font-weight: 400; /* Normal font kalınlığı */
+    color: #5a6268; /* Biraz daha açık gri tonu */
+    margin-top: 0; /* Üstteki varsayılan boşluğu kaldır */
+}
+
+/* Küçük ekranlar için medya sorgusu (isteğe bağlı) */
+@media (max-width: 600px) {
+    .brand-logo {
+        font-size: 3.5em; /* Mobil için biraz daha küçük logo */
+    }
+    .coming-soon {
+        font-size: 1.5em; /* Mobil için biraz daha küçük yazı */
+    }
+}
